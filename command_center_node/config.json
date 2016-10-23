@@ -6,5 +6,8 @@
     "iotHubConnString": "HostName=dns.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=Yz7BDPAyRCzHF63YWU6E2di30j8YPlepKkd5utT2Op0=",
     "storageAcountName": "dnsstorageaccount",
     "storageAccountKey": "aPtxv4VfnuOLHnb6Y/iR6DZJ7Y7/bPQVoEPKjuvW6+U915op7XTo9CTRS2juKiZqr6N6CxyNXGNTW4WAfObwPw==",
-    "storageTable": "DeviceRecords"
+    "storageTable": "DeviceRecords",
+    "engines" : {
+        "node" : "6.6.0"
+    }
 } 
