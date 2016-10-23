@@ -1,10 +1,10 @@
 {
     "port": "3000",
-    "eventHubName": "dnsHack",
-    "ehConnString": "Endpoint=sb://dnshack.servicebus.windows.net/;SharedAccessKeyName=readwrite;SharedAccessKey=P/wyY9qqX62Yv+Pp5O52Qu7VH8vLnYc94DuE88qjzxg=;EntityPath=dnseventhub",
-    "deviceConnString": "HostName=dnsHack.azure-devices.net;DeviceId=adafruitFeather1;SharedAccessKey=BhxGtyVXSazFeQkqoqsQKfwdR757NueYCEiaI7wXzRs=",
-    "iotHubConnString": "HostName=dnsHack.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=tKEpN41PBNjecu1vx3Uwna4tGuv3yFNpzm1RHpWxKLs=",
-    "storageAcountName": "dnshack",
-    "storageAccountKey": "oKyOMGyuLgfqFpTnhZcy0m9kPD9+f3L+YmPd50bgjQEJMDzuxKa1ww+FLLta000SOdfSlClLukkPjkoFYRTeUw==",
-    "storageTable": "TemperatureRecords"
+    "eventHubName": "dnsEventHub",
+    "ehConnString": "Endpoint=sb://dnseventhub.servicebus.windows.net/;SharedAccessKeyName=readwrite;SharedAccessKey=vIndRNyU7UMbayHLvbpe64Xk+qxafxk17Ua/ucFy/Ds=;EntityPath=dnsEventHub",
+    "deviceConnString": "HostName=dns.azure-devices.net;DeviceId=adafruitFeather1;SharedAccessKey=Wq0WlSMWOY8p8C2/VFC9mneOGoJVikWixbzE9t0J7pc=",
+    "iotHubConnString": "HostName=dns.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=Yz7BDPAyRCzHF63YWU6E2di30j8YPlepKkd5utT2Op0=",
+    "storageAcountName": "dnsstorageaccount",
+    "storageAccountKey": "aPtxv4VfnuOLHnb6Y/iR6DZJ7Y7/bPQVoEPKjuvW6+U915op7XTo9CTRS2juKiZqr6N6CxyNXGNTW4WAfObwPw==",
+    "storageTable": "DeviceRecords"
 } 
