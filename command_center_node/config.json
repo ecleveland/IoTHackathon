@@ -1,0 +1,10 @@
+{
+    "port": "3000",
+    "eventHubName": "dnsHack",
+    "ehConnString": "Endpoint=sb://dnshack.servicebus.windows.net/;SharedAccessKeyName=readwrite;SharedAccessKey=P/wyY9qqX62Yv+Pp5O52Qu7VH8vLnYc94DuE88qjzxg=;EntityPath=dnseventhub",
+    "deviceConnString": "HostName=dnsHack.azure-devices.net;DeviceId=adafruitFeather1;SharedAccessKey=BhxGtyVXSazFeQkqoqsQKfwdR757NueYCEiaI7wXzRs=",
+    "iotHubConnString": "HostName=dnsHack.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=tKEpN41PBNjecu1vx3Uwna4tGuv3yFNpzm1RHpWxKLs=",
+    "storageAcountName": "dnshack",
+    "storageAccountKey": "oKyOMGyuLgfqFpTnhZcy0m9kPD9+f3L+YmPd50bgjQEJMDzuxKa1ww+FLLta000SOdfSlClLukkPjkoFYRTeUw==",
+    "storageTable": "TemperatureRecords"
+} 
