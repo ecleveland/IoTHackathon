@@ -25,7 +25,7 @@ AzureIoTHubClient iotHubClient(sslClient);
 
 const char ssid[] = "SGTUMA"; //  your WiFi SSID (name)
 const char pass[] = "55atsl0th";    // your WiFi password (use for WPA, or use as key for WEP)
-const char connectionString[] = "HostName=dnsHack.azure-devices.net;DeviceId=adafruitFeather1;SharedAccessKey=BhxGtyVXSazFeQkqoqsQKfwdR757NueYCEiaI7wXzRs=";
+const char connectionString[] = "HostName=dns.azure-devices.net;DeviceId=adafruitFeather1;SharedAccessKey=Wq0WlSMWOY8p8C2/VFC9mneOGoJVikWixbzE9t0J7pc=";
 
 int status = WL_IDLE_STATUS;
 
