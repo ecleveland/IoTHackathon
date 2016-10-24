@@ -17,7 +17,7 @@ and removing calls to _DoWork will yield the same results. */
 #include "sdk/schemaserializer.h"
 
 static const char DeviceId[] = "adafruitFeather1";
-static const char connectionString[] = "HostName=dnsHack.azure-devices.net;DeviceId=adafruitFeather1;SharedAccessKey=BhxGtyVXSazFeQkqoqsQKfwdR757NueYCEiaI7wXzRs=";
+static const char connectionString[] = "HostName=dns.azure-devices.net;DeviceId=adafruitFeather1;SharedAccessKey=Wq0WlSMWOY8p8C2/VFC9mneOGoJVikWixbzE9t0J7pc=";
 
 static int redLedPin = 12;
 static int redLedState = LOW;

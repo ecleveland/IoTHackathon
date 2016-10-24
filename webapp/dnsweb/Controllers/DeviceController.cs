@@ -10,10 +10,10 @@ namespace dnsweb.Controllers
         private DeviceMessaging deviceMessaging = new DeviceMessaging();
 
         [HttpPost]
-        [Route("SendCommandToDevice/{messageSelection}")]
-        public async Task<IHttpActionResult> SendCommandToDevice(int messageSelection)
-        {
-            await deviceMessaging.SendMessageAsync();
+        [Route("SendCommandToDevice/{function}")]
+        public async Task<IHttpActionResult> SendCommandToDevice(string function)
+        {            
+            await deviceMessaging.SendCommand(function);
             return Ok(1);
         }
 

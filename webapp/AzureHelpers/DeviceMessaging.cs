@@ -2,6 +2,7 @@
 using System.Text;
 using System.Threading.Tasks;
 using System;
+using Newtonsoft.Json;
 
 namespace AzureHelpers
 {
@@ -17,9 +18,13 @@ namespace AzureHelpers
             await serviceClient.SendAsync("simulatedDevice1", commandMessage);
         }
 
-        public Task SendCommand(int command)
+        public async Task SendCommand(string command)
         {
-            throw new NotImplementedException();
+            serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
+            var messageObj = new { Name = command, Parameters = "" };
+            var message = JsonConvert.SerializeObject(messageObj);
+            var commandMessage = new Message(Encoding.ASCII.GetBytes(message));
+            await serviceClient.SendAsync("adafruitFeather1", commandMessage);
         }
     }
 }
