@@ -97,6 +97,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AzureStorageHelper.cs" />
     <Compile Include="DeviceMessaging.cs" />
     <Compile Include="IDeviceMessaging.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
