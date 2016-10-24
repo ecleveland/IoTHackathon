@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnsweb", "dnsweb\dnsweb.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnsweb.Tests", "dnsweb.Tests\dnsweb.Tests.csproj", "{FE24E707-23A1-4590-84F5-18EB08F3439A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureHelpers", "AzureHelpers\AzureHelpers.csproj", "{9A492987-9746-44F9-B03E-6D5489EA860B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FE24E707-23A1-4590-84F5-18EB08F3439A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE24E707-23A1-4590-84F5-18EB08F3439A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE24E707-23A1-4590-84F5-18EB08F3439A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A492987-9746-44F9-B03E-6D5489EA860B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A492987-9746-44F9-B03E-6D5489EA860B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A492987-9746-44F9-B03E-6D5489EA860B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A492987-9746-44F9-B03E-6D5489EA860B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

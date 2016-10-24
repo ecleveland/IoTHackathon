@@ -43,7 +43,7 @@ namespace SimulatedDevice1
                 await deviceClient.SendEventAsync(message);
                 Console.WriteLine("{0} > Sending message: {1}", DateTime.Now, messageString);
 
-                Task.Delay(1000).Wait();
+                Task.Delay(5000).Wait();
             }
         }
 
