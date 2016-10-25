@@ -10,7 +10,7 @@ namespace dnsweb.Controllers
         private DeviceMessaging deviceMessaging = new DeviceMessaging();
         private AzureStorageHelper storageHelper = new AzureStorageHelper();
 
-        [HttpPost]
+        [HttpGet]
         [Route("SendCommandToDevice/{function}")]
         public async Task<IHttpActionResult> SendCommandToDevice(string function)
         {            
@@ -46,7 +46,7 @@ namespace dnsweb.Controllers
         [Route("GetItemsCount/{DeviceId}")]
         public async Task<IHttpActionResult> GetItemsCount(string DeviceId)
         {
-            var data = "Items Count Data";
+            var data = storageHelper.GetDeviceItemsCount(DeviceId);
             return Ok(data);
         }
 
@@ -62,15 +62,15 @@ namespace dnsweb.Controllers
         [Route("GetDeviceLocation/{DeviceId}")]
         public async Task<IHttpActionResult> GetDeviceLocation(string DeviceId)
         {
-            var data = "Location Data";
+            var data = storageHelper.GetLastKnownLocation(DeviceId);
             return Ok(data);
         }
 
         [HttpGet]
-        [Route("GetAllTemperatures")]
-        public async Task<IHttpActionResult> GetAllTemperatures()
+        [Route("GetDeviceReadings")]
+        public async Task<IHttpActionResult> GetDeviceReadings()
         {
-            var data = storageHelper.GetAllDeviceReadings();
+            var data = storageHelper.GetAllDeviceReadings("adafruitFeather1");
             return Ok(data);
         }
     }

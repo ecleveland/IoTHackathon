@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulatedDevice1", "SimulatedDevice1\SimulatedDevice1.csproj", "{9B58821F-E27F-4278-A193-245B3AA93F41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendCloudToDevice", "SendCloudToDevice\SendCloudToDevice.csproj", "{2BE1B4FB-9742-4387-9BC0-65D85BB38024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulatedLocation1", "SimulatedLocation1\SimulatedLocation1.csproj", "{7963EBBD-CE3C-422C-BEFA-967382444170}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2BE1B4FB-9742-4387-9BC0-65D85BB38024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BE1B4FB-9742-4387-9BC0-65D85BB38024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BE1B4FB-9742-4387-9BC0-65D85BB38024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7963EBBD-CE3C-422C-BEFA-967382444170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7963EBBD-CE3C-422C-BEFA-967382444170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7963EBBD-CE3C-422C-BEFA-967382444170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7963EBBD-CE3C-422C-BEFA-967382444170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
