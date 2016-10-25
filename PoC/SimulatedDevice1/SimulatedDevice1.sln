@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendCloudToDevice", "SendCl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulatedLocation1", "SimulatedLocation1\SimulatedLocation1.csproj", "{7963EBBD-CE3C-422C-BEFA-967382444170}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adafruitProto1", "adafruitProto\adafruitProto1.csproj", "{74578A8B-8106-42EE-B40E-9D1CC99F4159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adafruitProto2", "adafruitProto2\adafruitProto2.csproj", "{0E706BAF-11AD-471B-800E-FB7CD5B6CF19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{7963EBBD-CE3C-422C-BEFA-967382444170}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7963EBBD-CE3C-422C-BEFA-967382444170}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7963EBBD-CE3C-422C-BEFA-967382444170}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74578A8B-8106-42EE-B40E-9D1CC99F4159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74578A8B-8106-42EE-B40E-9D1CC99F4159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74578A8B-8106-42EE-B40E-9D1CC99F4159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74578A8B-8106-42EE-B40E-9D1CC99F4159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E706BAF-11AD-471B-800E-FB7CD5B6CF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E706BAF-11AD-471B-800E-FB7CD5B6CF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E706BAF-11AD-471B-800E-FB7CD5B6CF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E706BAF-11AD-471B-800E-FB7CD5B6CF19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
