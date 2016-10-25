@@ -18,13 +18,13 @@ namespace AzureHelpers
             await serviceClient.SendAsync("simulatedDevice1", commandMessage);
         }
 
-        public async Task SendCommand(string command)
+        public async Task SendCommand(string deviceId, string command)
         {
             serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
             var messageObj = new { Name = command, Parameters = "" };
             var message = JsonConvert.SerializeObject(messageObj);
             var commandMessage = new Message(Encoding.ASCII.GetBytes(message));
-            await serviceClient.SendAsync("adafruitFeather1", commandMessage);
+            await serviceClient.SendAsync(deviceId, commandMessage);
         }
     }
 }

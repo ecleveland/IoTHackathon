@@ -11,10 +11,10 @@ namespace dnsweb.Controllers
         private AzureStorageHelper storageHelper = new AzureStorageHelper();
 
         [HttpGet]
-        [Route("SendCommandToDevice/{function}")]
-        public async Task<IHttpActionResult> SendCommandToDevice(string function)
+        [Route("SendCommandToDevice/{deviceId}/{function}")]
+        public async Task<IHttpActionResult> SendCommandToDevice(string deviceId, string function)
         {            
-            await deviceMessaging.SendCommand(function);
+            await deviceMessaging.SendCommand(deviceId, function);
             return Ok(1);
         }
 
