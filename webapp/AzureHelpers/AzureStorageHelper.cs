@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Azure;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
+using AzureHelpers.Models;
 
 namespace AzureHelpers
 {
@@ -18,7 +15,7 @@ namespace AzureHelpers
             storageAccount = CloudStorageAccount.Parse(connectionString);
         }
 
-        public void GetAllTemperatures()
+        public IList<DeviceEntity> GetAllDeviceReadings()
         {
             // Create the table client.
             CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
@@ -27,14 +24,12 @@ namespace AzureHelpers
             CloudTable table = tableClient.GetTableReference("DeviceRecords");
 
             // Construct the query operation for all customer entities where PartitionKey="Smith".
-            //TableQuery<CustomerEntity> query = new TableQuery<CustomerEntity>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "Smith"));
+            TableQuery<DeviceEntity> query = new TableQuery<DeviceEntity>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "adafruitFeather1"));
 
-            // Print the fields for each customer.
-            //foreach (CustomerEntity entity in table.ExecuteQuery(query))
-            //{
-            //    Console.WriteLine("{0}, {1}\t{2}\t{3}", entity.PartitionKey, entity.RowKey,
-            //        entity.Email, entity.PhoneNumber);
-            //}
+
+            var results = table.ExecuteQuery(query).ToList();
+
+            return results;
         }
     }
 }

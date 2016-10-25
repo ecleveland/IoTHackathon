@@ -8,6 +8,7 @@ namespace dnsweb.Controllers
     public class DeviceController : ApiController
     {
         private DeviceMessaging deviceMessaging = new DeviceMessaging();
+        private AzureStorageHelper storageHelper = new AzureStorageHelper();
 
         [HttpPost]
         [Route("SendCommandToDevice/{function}")]
@@ -62,6 +63,14 @@ namespace dnsweb.Controllers
         public async Task<IHttpActionResult> GetDeviceLocation(string DeviceId)
         {
             var data = "Location Data";
+            return Ok(data);
+        }
+
+        [HttpGet]
+        [Route("GetAllTemperatures")]
+        public async Task<IHttpActionResult> GetAllTemperatures()
+        {
+            var data = storageHelper.GetAllDeviceReadings();
             return Ok(data);
         }
     }

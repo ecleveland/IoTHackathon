@@ -11,6 +11,7 @@
     <AssemblyName>AzureHelpers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -100,6 +101,7 @@
     <Compile Include="AzureStorageHelper.cs" />
     <Compile Include="DeviceMessaging.cs" />
     <Compile Include="IDeviceMessaging.cs" />
+    <Compile Include="Models\DeviceEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
