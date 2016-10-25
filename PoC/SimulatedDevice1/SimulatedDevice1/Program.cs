@@ -34,8 +34,9 @@ namespace SimulatedDevice1
 
                 var telemetryDataPoint = new
                 {
-                    deviceId = "simulatedDevice1",
-                    windSpeed = currentWindSpeed
+                    DeviceId = "simulatedDevice1",
+                    WindSpeed = currentWindSpeed,
+                    EventTime = DateTime.Now
                 };
                 var messageString = JsonConvert.SerializeObject(telemetryDataPoint);
                 var message = new Message(Encoding.ASCII.GetBytes(messageString));
